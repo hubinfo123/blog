@@ -5,5 +5,3 @@ RUN rm /etc/nginx/conf.d/*
 COPY ./vhost.nginx.conf /etc/nginx/conf.d/blog.conf
 
 EXPOSE 80
-
-ENTRYPOINT ["nginx","-g","daemon off;"]
